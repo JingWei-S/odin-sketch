@@ -37,3 +37,14 @@ body {
     margin-left: -1px; /*make the grid look better*/
     margin-bottom: -1px;
 }
+
+button {
+    max-width: fit-content;
+    align-self: center;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid palevioletred;
+    border-radius: 4px;
+    padding: 4px 12px;
+}

@@ -13,3 +13,18 @@ for (let i = 0; i<WIDTH; i++) {
     }
     container.appendChild(row);
 }
+
+const blocks = document.querySelectorAll(".block");
+blocks.forEach(block => block.addEventListener("mouseover", changeColor));
+
+// implement change color - black for now
+function changeColor(e) {
+    console.log(e.button);
+    let cur = document.querySelector('.block:hover');
+    cur.style.backgroundColor = "black";
+    // const loc = document.querySelector(`${e.target}`);
+    // loc.style.color = "black";
+}
+
+const button = document.querySelector("button");
+button.addEventListener("click", () => location.reload());
